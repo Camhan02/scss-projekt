@@ -1,11 +1,9 @@
 @use "partials"; /*Partial fil hentes ind i style.scss som et modul. Filen er en samling af variabler, mixins og funktioner som kan genbruges*/
 
-*{
-  box-sizing: border-box;
-  margin: 0;
-}
 
 body{
+  box-sizing: border-box;
+  margin: 0;
   padding: 0;
   font-family: partial.$font;
   background-color: partial.$bg-color;
@@ -49,5 +47,55 @@ opacity: 1; //The link's opacity is set to 1, making it fully visible.
 }
 
 img{
-  
+  max-width: 100%;
+  height: auto;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: minmax(50px, auto); /*ved at bruge minmax sikrer vi en minimumsstørrelse af vores gridelementer og ved auto sikrer vi at boksen tilpasser sig efter indholdet*/
+
+}
+
+/*Navigation*/
+
+header{
+  grid-column: 1/6; /*Grid column start og slut på en linje i stedet for to*/
+  background-color: partial.$nav-color;
+  border-bottom: 4px solid partial.$primary-color;
+
+}
+
+nav{
+  height: 4em;
+  padding: 1em;
+  @include partial.flex($justify: space-between); /*Mixin er blevet kaldt og variablen justify er ændret*/
+
+    img{
+        width: 70px;
+    }
+
+    #bars{
+        display:none;
+    }
+
+    ul{
+        @include partial.flex;
+        list-style-type: none;
+    }
+
+    a{
+        color: partial.$text-color;
+        padding: 0.5em;
+        margin: 0.5em;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        }
+
+    a:hover, .active{
+        color: partial.$primary-color;
+    }
+
 }
