@@ -11,3 +11,9 @@ Variabler defineret i blokke ({}) are normalvis lokale og kan kun tilgås inde i
 
 /*Mixins*/
 
+@mixin flex($justify:center, $align:center) {
+  /*justify op $align er parametre/variabler som kan ændres når vores mixin kaldes*/
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
