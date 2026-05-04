@@ -1,0 +1,133 @@
+@use 'partial';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: partial.$font;
+  background: partial.$bg;
+  color: partial.$text;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 5%;
+  background: partial.$white;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    img {
+      width: 50px;
+    }
+
+    h1 {
+      color: partial.$primary;
+    }
+  }
+
+  nav {
+    a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: partial.$primary;
+      font-weight: 600;
+    }
+  }
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 60px;
+
+  h2 {
+    font-size: 40px;
+    color: partial.$primary;
+  }
+
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: partial.$primary;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+}
+
+/* SCENARIO */
+.scenario {
+  background: partial.$white;
+  margin: 40px auto;
+  padding: 30px;
+  max-width: 600px;
+
+  #choices {
+    button {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      cursor: pointer;
+    }
+  }
+
+  .score {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+/* TIPS */
+.tips {
+  padding: 40px;
+  text-align: center;
+
+  .grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+    div {
+      background: partial.$white;
+      padding: 20px;
+    }
+  }
+}
+
+/* KONTAKT */
+.kontakt {
+  padding: 40px;
+  text-align: center;
+
+  form {
+    max-width: 400px;
+    margin: auto;
+
+    input, textarea {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+    }
+  }
+}
+
+/* FOOTER */
+footer {
+  background: partial.$primary;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
