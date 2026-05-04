@@ -69,25 +69,125 @@ header {
   background: partial.$white;
   margin: 40px auto;
   padding: 30px;
-  max-width: 600px;
+  max-width: 850px;
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(8, 37, 70, 0.15);
+
+  .fish-area {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+
+    .fish {
+      font-size: 80px;
+      animation: swim 2.5s ease-in-out infinite;
+    }
+
+    .speech-bubble {
+      background: #eef5ff;
+      border: 3px solid partial.$primary;
+      padding: 25px;
+      border-radius: 25px;
+      position: relative;
+      width: 100%;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: -20px;
+        top: 35px;
+        width: 0;
+        height: 0;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-right: 20px solid partial.$primary;
+      }
+
+      h2 {
+        color: partial.$primary;
+        margin-bottom: 10px;
+      }
+
+      p {
+        color: partial.$text;
+      }
+    }
+  }
 
   #choices {
+    display: grid;
+    gap: 12px;
+
     button {
       width: 100%;
-      margin: 10px 0;
-      padding: 10px;
+      padding: 15px;
       cursor: pointer;
+      border: 2px solid transparent;
+      border-radius: 18px;
+      background: #f2f6fb;
+      color: partial.$primary;
+      font-family: partial.$font;
+      font-weight: 600;
+      text-align: left;
+
+      &:hover {
+        background: partial.$white;
+        border-color: partial.$primary;
+      }
     }
   }
 
   .score {
     margin-top: 20px;
     font-weight: bold;
+    color: partial.$primary;
+  }
+
+  #restart {
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: partial.$primary;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: partial.$font;
+    font-weight: 600;
+  }
+}
+
+@keyframes swim {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }
 
 .hidden {
   display: none;
+}
+
+@media (max-width: 700px) {
+  .scenario {
+    .fish-area {
+      flex-direction: column;
+      text-align: center;
+
+      .speech-bubble {
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
 }
 
 /* TIPS */
