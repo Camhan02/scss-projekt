@@ -172,8 +172,13 @@ header nav a {
   justify-content: center;
 }
 .tips .grid div {
-  background: #ffffff;
+  background: #e6eef8;
   padding: 20px;
+  border-radius: 15px;
+  border: 2px solid #082546;
+}
+.tips .grid div h3 {
+  color: #082546;
 }
 
 /* KONTAKT */
