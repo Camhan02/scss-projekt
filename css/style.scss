@@ -22,29 +22,32 @@ header {
   position: relative;
 }
 
-  .logo {
+ .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 
   img {
     width: 80px;
   }
 
-  .logo-text {
-    font-weight: 700;
-    font-size: 2.0rem;
+  .brand {
     display: flex;
-    gap: 5px;
+    flex-direction: column;
+    line-height: 1;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+    color: partial.$primary;
+    margin: 0;
+  }
+
+  p {
+    font-size: 0.9rem;
+    color: partial.$primary;
+    margin: 4px 0 0 2px;
     letter-spacing: 1px;
-
-    .phish {
-      color: #000000;
-    }
-
-    .smart {
-      color: partial.$primary;
-    }
   }
 }
 
@@ -236,7 +239,7 @@ header {
   }
 }
 
-/* FAKE MAIL - Hvordan ser det ud? */
+/* FAKE MAIL - Hvordan kan det se ud? */
 .fake-mail-section {
   padding: 50px 5%;
   background: #eef5ff;

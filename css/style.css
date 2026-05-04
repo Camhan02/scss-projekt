@@ -24,23 +24,26 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 .logo img {
   width: 80px;
 }
-.logo .logo-text {
-  font-weight: 700;
-  font-size: 2rem;
+.logo .brand {
   display: flex;
-  gap: 5px;
-  letter-spacing: 1px;
+  flex-direction: column;
+  line-height: 1;
 }
-.logo .logo-text .phish {
-  color: #000000;
-}
-.logo .logo-text .smart {
+.logo h1 {
+  font-size: 2.2rem;
   color: #082546;
+  margin: 0;
+}
+.logo p {
+  font-size: 0.9rem;
+  color: #082546;
+  margin: 4px 0 0 2px;
+  letter-spacing: 1px;
 }
 
 nav {
@@ -203,7 +206,7 @@ nav a {
   color: #082546;
 }
 
-/* FAKE MAIL - Hvordan ser det ud? */
+/* FAKE MAIL - Hvordan kan det se ud? */
 .fake-mail-section {
   padding: 50px 5%;
   background: #eef5ff;
