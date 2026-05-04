@@ -190,7 +190,7 @@ header {
   }
 }
 
-/* TIPS */
+/* GODE RÅD */
 .tips {
   padding: 40px;
   text-align: center;
@@ -200,10 +200,14 @@ header {
     gap: 20px;
     justify-content: center;
 
-    div {
-      background: partial.$white;
-      padding: 20px;
-    }
+  div {
+  background: #e6eef8; // lys version af din blå
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid partial.$primary;
+
+  h3 {
+    color: partial.$primary;
   }
 }
 
