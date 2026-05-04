@@ -28,7 +28,7 @@ header .logo img {
 }
 header .logo .logo-text {
   font-weight: 700;
-  font-size: 2.2rem;
+  font-size: 2rem;
   display: flex;
   gap: 5px;
   letter-spacing: 1px;
