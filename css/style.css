@@ -14,33 +14,42 @@ body {
 /* HEADER */
 header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 15px 5%;
   background: #ffffff;
+  position: relative;
 }
-header .logo {
+
+.logo {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-header .logo img {
+.logo img {
   width: 80px;
 }
-header .logo .logo-text {
+.logo .logo-text {
   font-weight: 700;
   font-size: 2rem;
   display: flex;
   gap: 5px;
   letter-spacing: 1px;
 }
-header .logo .logo-text .phish {
+.logo .logo-text .phish {
   color: #000000;
 }
-header .logo .logo-text .smart {
+.logo .logo-text .smart {
   color: #082546;
 }
-header nav a {
-  margin-left: 20px;
+
+nav {
+  margin-left: auto;
+  margin-right: 40px;
+  display: flex;
+  gap: 30px;
+}
+nav a {
   text-decoration: none;
   color: #082546;
   font-weight: 600;

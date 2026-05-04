@@ -15,9 +15,12 @@ body {
 /* HEADER */
 header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 15px 5%;
   background: partial.$white;
+  position: relative;
+}
 
   .logo {
   display: flex;
@@ -45,13 +48,17 @@ header {
   }
 }
 
-  nav {
-    a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: partial.$primary;
-      font-weight: 600;
-    }
+ nav {
+
+  margin-left: auto; 
+  margin-right: 40px; 
+  display: flex;
+  gap: 30px;
+
+  a {
+    text-decoration: none;
+    color: partial.$primary;
+    font-weight: 600;
   }
 }
 
