@@ -26,7 +26,17 @@ header .logo {
 header .logo img {
   width: 50px;
 }
-header .logo h1 {
+header .logo .logo-text {
+  font-weight: 700;
+  font-size: 2.2rem;
+  display: flex;
+  gap: 5px;
+  letter-spacing: 1px;
+}
+header .logo .logo-text .phish {
+  color: #000000;
+}
+header .logo .logo-text .smart {
   color: #082546;
 }
 header nav a {
@@ -181,7 +191,7 @@ header nav a {
   color: #082546;
 }
 
-/* FAKE MAIL VISNING */
+/* FAKE MAIL - Hvordan ser det ud? */
 .fake-mail-section {
   padding: 50px 5%;
   background: #eef5ff;
@@ -310,14 +320,36 @@ header nav a {
   padding: 40px;
   text-align: center;
 }
+.kontakt h2 {
+  font-size: 2.2rem;
+  color: #082546;
+  margin-bottom: 10px;
+}
 .kontakt form {
   max-width: 400px;
   margin: auto;
+}
+.kontakt form button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  background: #082546;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.kontakt form button:hover {
+  background: #0d3b66;
 }
 .kontakt form input, .kontakt form textarea {
   width: 100%;
   margin: 10px 0;
   padding: 10px;
+  font-family: "Poppins", sans-serif;
 }
 
 /* FOOTER */
