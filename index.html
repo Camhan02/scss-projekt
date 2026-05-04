@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhishSmart</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- VIGTIGT: vi linker til CSS (ikke SCSS) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <img src="img/logo.png" alt="PhishSmart logo">
+    <h1>PhishSmart</h1>
+  </div>
+
+  <nav>
+    <a href="#scenario">Test dig selv</a>
+    <a href="#tips">Gode råd</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Lær at spotte phishing</h2>
+  <p>Test dine valg som studerende</p>
+  <a href="#scenario" class="btn">Start test</a>
+</section>
+
+<section id="scenario" class="scenario">
+  <h2 id="title">Loading...</h2>
+  <p id="text"></p>
+
+  <div id="choices"></div>
+
+  <p class="score">Score: <span id="score">0</span></p>
+
+  <button id="restart" class="hidden">Start forfra</button>
+</section>
+
+<section id="tips" class="tips">
+  <h2>Gode råd</h2>
+
+  <div class="grid">
+    <div>
+      <h3>Tjek afsender</h3>
+      <p>Phishing mails ligner ægte mails</p>
+    </div>
+
+    <div>
+      <h3>Klik ikke blindt</h3>
+      <p>Undersøg links før du klikker</p>
+    </div>
+
+    <div>
+      <h3>Del aldrig kodeord</h3>
+      <p>Ingen legitime services spørger</p>
+    </div>
+  </div>
+</section>
+
+<section id="kontakt" class="kontakt">
+  <h2>Kontakt</h2>
+
+  <form>
+    <input type="text" placeholder="Navn">
+    <input type="email" placeholder="Email">
+    <textarea placeholder="Besked"></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  <p>PhishSmart © 2026</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
