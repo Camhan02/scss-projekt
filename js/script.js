@@ -92,7 +92,7 @@ const scenes = {
   },
 
   bestEnding: {
-    title: "Bedste slutning: Du handlede PhishSmart",
+    title: "Bedste slutning: Du gjorde det helt rigtige, og undgik at blive hacket!",
     text: "Du tjekkede afsenderen, undgik linket og rapporterede mailen. Det beskytter både dig og andre studerende.",
     choices: []
   }

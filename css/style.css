@@ -185,6 +185,9 @@ nav a {
   padding: 40px;
   text-align: center;
 }
+.tips h2 {
+  margin-bottom: 30px;
+}
 .tips .grid {
   display: flex;
   gap: 20px;
