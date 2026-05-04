@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f5f7fa;
+  color: #222;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 5%;
+  background: #ffffff;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .logo img {
+  width: 50px;
+}
+header .logo h1 {
+  color: #082546;
+}
+header nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #082546;
+  font-weight: 600;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 60px;
+}
+.hero h2 {
+  font-size: 40px;
+  color: #082546;
+}
+.hero .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #082546;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+/* SCENARIO */
+.scenario {
+  background: #ffffff;
+  margin: 40px auto;
+  padding: 30px;
+  max-width: 600px;
+}
+.scenario #choices button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  cursor: pointer;
+}
+.scenario .score {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+/* TIPS */
+.tips {
+  padding: 40px;
+  text-align: center;
+}
+.tips .grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.tips .grid div {
+  background: #ffffff;
+  padding: 20px;
+}
+
+/* KONTAKT */
+.kontakt {
+  padding: 40px;
+  text-align: center;
+}
+.kontakt form {
+  max-width: 400px;
+  margin: auto;
+}
+.kontakt form input, .kontakt form textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+/* FOOTER */
+footer {
+  background: #082546;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}/*# sourceMappingURL=style.css.map */
