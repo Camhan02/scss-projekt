@@ -190,6 +190,10 @@ nav a {
   text-align: center;
 }
 .tips h2 {
+  font-size: 2.2rem;
+  color: #082546;
+}
+.tips h2 {
   margin-bottom: 30px;
 }
 .tips .grid {
